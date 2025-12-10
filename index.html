@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Wachos Bien Vestidos | Ropa Urbana</title>
+    <!-- Fuente moderna 'Roboto' para estética profesional -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- TU CSS EXTERNO -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- TU SCRIPT EXTERNO -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <h1>LOS WACHOS</h1>
+            </div>
+
+            <nav>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="#guiadetalles">Guía de Talles</a>
+                <a href="#envios-cambios">Envíos y Cambios</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BOTÓN FLOTANTE -->
+    <a href="#" onclick="contactarFlotante()" class="whatsapp-float" title="Contactar para comprar">
+        💬
+    </a>
+
+    <!-- INICIO -->
+    <section id="inicio">
+        <div class="container">
+            <h2>Los Wachos Bien Vestidos</h2>
+            <p>Ropa urbana importada para los que tienen estilo propio. Comodidad, flow y actitud en cada prenda. Elegí tu outfit, hablá con nosotros y vestite con facha.</p>
+            <a href="#catalogo" class="btn-catalogo">Entrá al catálogo y encontrá tu próxima pilcha 🔥</a>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section id="catalogo" class="container">
+        <h2>Catálogo de Productos</h2>
+        <p style="text-align: center;">Oversize, joggers, buzos y remeras con la vibra de la calle. Cada prenda tiene lo que buscás: estilo, comodidad y calidad real.</p>
+
+        <div class="catalogo-grid">
+            
+            <!-- PRODUCTO 1 -->
+            <div class="producto-card">
+                <a href="images/foto_remera_real.jpg.png" target="_blank">
+                    <img src="images/foto_remera_real.jpg.png" alt="Remera Oversize">
+                </a>
+                <div class="card-content">
+                    <div class="nombre">Remera Oversize "Flow"</div>
+                    <div class="precio">$8.990</div>
+                    <div class="talle">Talle: M, L, XL</div>
+                    <a href="#" onclick="contactarWacho('Remera Oversize Flow')" class="btn-whatsapp-card">PEDIR</a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 2 -->
+            <div class="producto-card">
+                <a href="images/joggers.jpg.jpg" target="_blank">
+                    <img src="images/joggers.jpg.jpg" alt="Joggers Urbanos">
+                </a>
+                <div class="card-content">
+                    <div class="nombre">Joggers "Attitude"</div>
+                    <div class="precio">$15.490</div>
+                    <div class="talle">Talle: S, M, L</div>
+                    <a href="#" onclick="contactarWacho('Joggers Attitude')" class="btn-whatsapp-card">PEDIR</a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 3 -->
+            <div class="producto-card">
+                <a href="images/buzo.street.jpg.png" target="_blank">
+                    <img src="images/buzo.street.jpg.png" alt="Buzo con Capucha">
+                </a>
+                <div class="card-content">
+                    <div class="nombre">Buzo "Street Vibe"</div>
+                    <div la="precio">$24.990</div>
+                    <div class="talle">Talle: M, L</div>
+                    <a href="#" onclick="contactarWacho('Buzo Street Vibe')" class="btn-whatsapp-card">PEDIR</a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 4 -->
+            <div class="producto-card">
+                <a href="images/minimalista.jpg.png" target="_blank">
+                    <img src="images/minimalista.jpg.png" alt="Hoodie Minimalista">
+                </a>
+                <div class="card-content">
+                    <div class="nombre">Hoodie Minimalista Ed. Limitada</div>
+                    <div class="precio">$18.000</div>
+                    <div class="talle">Talle: S, M, L, XL</div>
+                    <a href="#" onclick="contactarWacho('Hoodie Minimalista Ed. Limitada')" class="btn-whatsapp-card">PEDIR</a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 5 -->
+            <div class="producto-card">
+                <a href="images/vertigo.jpg.png" target="_blank">
+                    <img src="images/vertigo.jpg.png" alt="Remera Oversize Gráfica">
+                </a>
+                <div class="card-content">
+                    <div class="nombre">Remera Oversize "Gráfico Vértigo"</div>
+                    <div class="precio">$9.500</div>
+                    <div class="talle">Talle: L, XL, XXL</div>
+                    <a href="#" onclick="contactarWacho('Remera Oversize Grafico Vertigo')" class="btn-whatsapp-card">PEDIR</a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 6 -->
+            <div class="producto-card">
+                <a href="images/pantalón.jpg.png" target="_blank">
+                    <img src="images/pantalón.jpg.png" alt="Pantalón Cargo">
+                </a>
+                <div class="card-content">
+                    <div class="nombre">Pantalón Cargo Urbano (Blackout)</div>
+                    <div class="precio">$17.800</div>
+                    <div class="talle">Talle: 30, 32, 34, 36</div>
+                    <a href="#" onclick="contactarWacho('Pantalon Cargo Urbano Blackout')" class="btn-whatsapp-card">PEDIR</a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 7 -->
+            <div class="producto-card">
+                <a href="images/gorra.jpg.png" target="_blank">
+                    <img src="images/gorra.jpg.png" alt="Gorra Trucker">
+                </a>
+                <div class="card-content">
+                    <div class="nombre">Gorra Trucker Los Wachos</div>
+                    <div class="precio">$9.500</div>
+                    <div class="talle">Talle: Único</div>
+                    <a href="#" onclick="contactarWacho('Gorra Trucker Los Wachos')" class="btn-whatsapp-card">PEDIR</a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 8 -->
+            <div class="producto-card">
+                <a href="images/jogger.gris.jpg.png" target="_blank">
+                    <img src="images/jogger.gris.jpg.png" alt="Jogger Gris">
+                </a>
+                <div class="card-content">
+                    <div class="nombre">Jogger Gris Melange "Comfy"</div>
+                    <div class="precio">$14.990</div>
+                    <div class="talle">Talle: S, M, L</div>
+                    <a href="#" onclick="contactarWacho('Jogger Gris Melange Comfy')" class="btn-whatsapp-card">PEDIR</a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 9 -->
+            <div class="producto-card">
+                <a href="images/peluche.jpg.png" target="_blank">
+                    <img src="images/peluche.jpg.png" alt="Campera Peluche">
+                </a>
+                <div class="card-content">
+                    <div class="nombre">Campera Peluche</div>
+                    <div class="precio">$16.500</div>
+                    <div class="talle">Talle: M, L, XL</div>
+                    <a href="#" onclick="contactarWacho('Campera Peluche')" class="btn-whatsapp-card">PEDIR</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos Los Wachos Bien Vestidos, un grupo que vive la calle, la música y la moda.</p>
+            <p>Nos mueve el estilo urbano, la comodidad y la buena onda. No seguimos tendencias — las vestimos.</p>
+        </div>
+    </section>
+
+    <!-- GUÍA DE TALLES -->
+    <section id="guiadetalles" class="container">
+        <h2>Guía de Talles</h2>
+        <p>Sabemos que cada cuerpo tiene su flow. Mirá la guía de talles y elegí el que más te va.</p>
+
+        <div style="text-align: center; margin-top: 40px; border: 1px solid #000; padding: 20px;">
+            <p style="font-weight: 700; text-transform: uppercase;">Medidas Clave (Equivalencias)</p>
+            <p><strong>Remeras:</strong> S (50cm pecho / 70cm largo) | M (53cm pecho / 72cm largo)</p>
+            <p><strong>Joggers:</strong> Medir cintura y largo de pierna. Consultar por WhatsApp si hay dudas.</p>
+        </div>
+    </section>
+
+    <!-- ENVÍOS Y CAMBIOS -->
+    <section id="envios-cambios" style="background-color:#f7f7f7;">
+        <div class="container">
+            <h2>Envíos y Cambios</h2>
+            <p>Enviamos a todo el país. Si algo no te convence, podés cambiarlo sin problema.</p>
+            <p>Queremos que compres con confianza y quedes 100 % conforme.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <h4>Seguinos</h4>
+            <p>Encontranos en Instagram y TikTok para ver los nuevos drops, outfits y sorteos.</p>
+
+            <div class="social-links">
+                <a href="#"><span>📸</span> IG: los_wachos_bienvestidos</a>
+                <a href="#"><span>🎶</span> TikTok: los_wachos_bienvestidos</a>
+            </div>
+
+            <p style="margin-top: 20px;">Sumate a la comunidad de wachos con estilo. #LosWachosBienVestidos</p>
+            <p>&copy; 2024 Los Wachos Bien Vestidos.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
